@@ -1,2 +1,5 @@
 # pipeline-refinery
-post-chain sequencing for forms using Pipeline
+
+**refinery** enables chained form-posting using `League\Pipeline, PipelineBuilder` for use in forms with multiple pages.
+
+...
