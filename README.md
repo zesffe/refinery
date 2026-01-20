@@ -87,12 +87,12 @@ class FinalizeForm implements FormPage {
 
 and by (3) 
 
-- (a) defining the `$secret` for hashin'
-- (b) defining vars for postin'
-- (c) combining (a) and (b) into `$context`
-- (d) defining `new $refinery` using (c)
-- (e) adding the form pages
-- and (f) running `$refinery->handle()` using (b):
+- (a) defining the `$secret` for hashin';
+- (b) defining vars for postin';
+- (c) combining (a) and (b) into `$context`;
+- (d) defining `new $refinery` using (c);
+- (e) appending each of the form's pages;
+- and (f) running the initial `handle()` using (b):
 
 ```PHP
 $secret = md5('myPrecious');
@@ -115,4 +115,4 @@ extract((array) $refinery->handle($post)); # (f)
 if ($redirect) {header("Location: {$redirect}"); exit; }
 ```
 
-For more information, please run the example file `index.php`.
+For more information, please run the example `/example/index.php`.
