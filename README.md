@@ -13,9 +13,9 @@ use Refinery\Refinery;
 use Refinery\FormPost;
 
 require $dir . '/../Refinery.php';
-require $dir . '/../FormPost.php';
 require $dir . '/../FormContext.php';
 require $dir . '/../FormPage.php';
+require $dir . '/../FormPost.php';
 require $dir . '/../FormResult.php';
 ```
 
@@ -88,10 +88,10 @@ class FinalizeForm implements FormPage {
 and by (3) 
 
 - (a) defining the `$secret` for hashin'
-- (b) defining where the post vars be
-- (c) combining (a) and (b) into a `$context`
-- (d) defining a `new $refinery` using (c)
-- (e) adding your form pages
+- (b) defining vars for postin'
+- (c) combining (a) and (b) into `$context`
+- (d) defining `new $refinery` using (c)
+- (e) adding the form pages
 - and (f) running `$refinery->handle()` using (b):
 
 ```PHP
