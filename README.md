@@ -9,7 +9,6 @@ Inspired (heavily) by `League\PipelineBuilder`.
 Build a form with multiple pages by (1) requiring everything:
 
 ```PHP
-
 use Refinery\Refinery;
 use Refinery\FormPost;
 
@@ -18,14 +17,11 @@ require $dir . '/../FormPost.php';
 require $dir . '/../FormContext.php';
 require $dir . '/../FormPage.php';
 require $dir . '/../FormResult.php';
-require $dir . '/../renderHelper.php';
-
 ```
 
 by (2) defining the fields and handlers for each of your form's pages:
 
 ```PHP
-
 // page #1
 class InitializeForm implements FormPage {
 
@@ -87,7 +83,6 @@ class FinalizeForm implements FormPage {
 
 	public function handle(FormContext $context): FormResult {return FormResult::pass(['Submit the form!']); }
 }
-
 ```
 
 and by (3) 
@@ -120,4 +115,4 @@ extract((array) $refinery->handle($post)); # (f)
 if ($redirect) {header("Location: {$redirect}"); exit; }
 ```
 
-For more information, please try the example file `index.php`.
+For more information, please run the example file `index.php`.
