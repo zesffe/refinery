@@ -1,6 +1,6 @@
 # refinery
 
-**refinery** enables chained form-posting using for use in forms with multiple pages.
+**refinery** enables sequenced form pages for use in HTML forms with multiple pages.
 
 Inspired (heavily) by `League\PipelineBuilder`.
 
