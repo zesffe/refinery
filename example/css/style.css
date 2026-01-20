@@ -1,0 +1,62 @@
+
+html{
+	font-size: 17px;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	padding: 2rem 0;
+	background: #ccc;
+}
+
+h1{
+	font-size: 200%;
+}
+
+h1 a{
+	color: darkcyan;
+}
+
+h2{
+	font-style: italic;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+form{
+	display: grid;
+	width: clamp(480px, 640px, 50vw);
+	padding: 1rem;
+	margin: 1rem;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	border: 1px solid #333;
+}
+
+form .max-width{
+	grid-column: span 2;
+}
+
+input[type="text"], textarea {
+	width: 100%;
+}
+
+.buttons-row{
+	display: flex;
+	justify-content: end;
+}
+
+
+@media (max-width: 480px) {
+
+	form{
+		display: flex;
+		flex-direction: column;
+		width: calc(100% - 1rem);
+	}
+
+}
